@@ -103,7 +103,19 @@
       document.getElementById("username").innerText =
         tg.initDataUnsafe.user.first_name;
     }
-  </script>
+  </script> <script>
+  let tg = window.Telegram.WebApp;
+  tg.expand();
+
+  if (tg.initDataUnsafe.user) {
+    document.getElementById("username").innerText =
+      tg.initDataUnsafe.user.first_name;
+  }
+
+  function startEarning() {
+    window.open("PASTE_YOUR_CPA_LINK_HERE", "_blank");
+  }
+</script>
 
 </body>
 </html>
